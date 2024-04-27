@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Marriweather", sans-serif;
+}
+
+header, footer {
+    background-color: black;
+    color: gray;
+}
+
+body {
+    background-color: #181419;
+}
+
+/*ESTILO DEL HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    .navegacionPrincipal {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+    
+        img {
+            height: 50px;
+            width: 40px;
+            vertical-align: middle;
+        }
+        
+        span {
+            font-size: 1rem;
+            font-family: inherit;
+            font-weight: 550;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+    .menuNav {
+        margin-right: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(252, 249, 249, 0.3);
+            border-radius: 10px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: grey;
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 15vh;
+        .navegacionPrincipal {
+            flex-direction: column;
+            row-gap: 10px;
+            a {
+                text-decoration: none;
+                color: gray;
+                font-size: 1rem;
+                text-align: center;
+            }
+        
+            img {
+                height: 30px;
+                width: 30px;
+                vertical-align: middle;
+            }
+            
+            span {
+                font-size: 1rem;
+                font-family: inherit;
+                font-weight: 550;
+            }
+        }
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        .menuNav {
+            display: flex;
+            margin-right: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            &:hover {
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgba(252, 249, 249, 0.3);
+                border-radius: 10px;
+            }
+        }
+    
+        a {
+            text-decoration: none;
+            color: grey;
+        }
+    }
+}
+
+/*ESTILO DEL MAIN*/
+
+.seccionPrincipal {
+    height: 100vh;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+        
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+div {
+    justify-content: space-between;
+    text-align: center;
+    img {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .seccionPrincipal {
+        font-size: 1rem;
+            
+    }
+}
+
+.seccionBuscador {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #buscar {
+        border: 2px solid gray;
+        border-radius: 25px;
+        color: black;
+        font-size: 1.2rem;
+        height: 50px;
+        margin: 20px 0px;
+        outline: none;
+        padding: 0px 20px;
+        width: 300px;
+    }
+    #btnBuscar {
+        background-color: black;
+        display: inline-block;
+        color: gray;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid gray;
+        text-align: center;
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(252, 249, 249, 0.3);
+            border-radius: 25px;
+        }
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+}
+
+button {
+    background-color: black;
+    color: gray;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid gray;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(252, 249, 249, 0.3);
+        border-radius: 25px;
+    }
+}
+
+.seccionSeries, .seccionPeliculas, .seccionMasVistas {
+    margin-bottom: 40px;
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .btnAntSig {
+        text-align: center;
+    }
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    div {
+        margin-bottom: 20px;
+    }
+}
+
+.marginSeccion {
+    margin-top: 100px;
+}
+
+/*ANIMACION*/
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+@keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/*ESTILO DEL FOOTER*/
+.footer {
+    height: 15vh;
+    display: flex;
+    padding-top: 25px;
+    .navegacionFooter {
+        margin-left: 20%;
+        .listaFooter {
+            font-size: 1rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    .btnUp {
+        height: 50px;
+        width: 70px;
+        float: right;
+        i {
+            width: max-content;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        .navegacionFooter {
+            flex-direction: column;
+            justify-content: center;
+            .listaFooter {
+                font-size: 1rem;
+            }
+        }
+        
+        .btnUp {
+            height: 50px;
+            width: 70px;
+        }
+    }
+}
