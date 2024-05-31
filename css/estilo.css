@@ -583,6 +583,7 @@ button {
         right: 0;
         margin: auto;
         margin-top: 50px;
+        padding-top: 30px;
         height: 400px;   
     }
 }
