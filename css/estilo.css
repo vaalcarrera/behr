@@ -16,6 +16,19 @@ body {
     background-color: #181419;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(44, 41, 41);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(134, 33, 33);
+    border-radius: 10px;
+}
+
 /*ESTILO DEL HEADER*/
 
 header {
@@ -514,5 +527,62 @@ button {
             margin-top: 20px;
             margin-left: 250px;
         }
+    }
+}
+
+/*detalle*/
+
+.informacion {
+    height: 80vh;
+    background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("../assets/img/peli_1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .movieDetail {
+        display: flex;
+        position: absolute;
+        width: 70%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: max-content;
+      
+        .movieInfo {
+            padding-top: 90px;
+            margin-left: 50px;
+        
+            h2 {
+                font-size: 40px;
+            }
+        
+            p {
+                margin-top: 30px;
+                font-size: 20px;
+                height: 10px;
+            }
+        }
+    }    
+}
+
+.media {
+    height: max-content;
+
+    .mediaDetail {
+        width: 80%;
+        background-color: blue;
+        display: flex;
+        width: 70%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 50px;
+        height: 400px;   
     }
 }
