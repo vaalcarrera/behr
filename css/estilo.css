@@ -211,8 +211,89 @@ div {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+button {
+    cursor:pointer;
+    transition: all ease 0.5s;
+}
 
+.iniciosesion {
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulario {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    padding: 40px;
+    margin-top: 45px;
+    background-image: url(/assets/img/bg-iniciosesion.jpg);
+    background-size: cover;
+
+    form {
+        width: min-content;
+        display: block;
+        height: 60vh;
+
+        h2 {
+            margin-bottom: 40px;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 20px;
+            margin-left: 15px;
+            color: white;
+        }
+
+        input {
+            width: 400px;
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+            border-color: gray;
+            border-style: solid;
+        }
+
+        .errorField {
+            border: 2px solid red;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 400px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: rgb(134, 33, 33);;
+            a {
+                color: rgb(134, 33, 33);
+            }
+            
+        }
+
+        #warnings{
+            color: red;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .iniciosesion {
+        form {
+            padding-top: 85px;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -353,7 +434,7 @@ button {
 
 /*ESTILO DEL FOOTER*/
 .footer {
-    height: 15vh;
+    height: 12vh;
     display: flex;
     padding-top: 25px;
     .navegacionFooter {
