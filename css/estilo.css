@@ -220,6 +220,12 @@ div {
         height: 300px;
         width: 200px;
     }
+
+    h3 {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
 }
 
 button {
