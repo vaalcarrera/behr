@@ -19,7 +19,7 @@
                     if (pelicula.poster_path) {
                         peliculas += `
                             <div>
-                                <img class="poster hvr-pulse-grow" src="https://image.tmdb.org/t/p/w200/${pelicula.poster_path}" alt="${pelicula.title}">
+                                <a href="./pages/detalle.html"><img class="poster hvr-pulse-grow" src="https://image.tmdb.org/t/p/w200/${pelicula.poster_path}" alt="${pelicula.title}"></a>
                                 <h3>${pelicula.title}</h3>
                             </div>
                         `;
