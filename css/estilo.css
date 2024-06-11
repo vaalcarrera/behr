@@ -7,8 +7,13 @@
     font-family: "Marriweather", sans-serif;
 }
 
-header, footer {
-    background-color: black;
+.colorPrimary{
+    background-color: rgb(252, 2, 177);
+    color: gray;
+}
+
+footer {
+    background-color: rgb(252, 2, 177);
     color: gray;
 }
 
@@ -36,7 +41,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
     z-index: 1000;
     .navegacionPrincipal {
         height: 60px;
